@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IndustriaNet</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/all.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="images/logo-light.png">
+
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-md navbar-light bg-light fixed-top"
+        style="height: 80px"
+      >
+        <div class="container-fluid">
+          <input
+            type="image"
+            src="images/logo-light.png"
+            class="rounded-circle shadow"
+            alt="pic"
+            style="
+              margin-left: 20px;
+              margin-bottom: 10px;
+              height: 58px;
+              width: 58px;
+            "
+          />
+          <a
+            class="navbar-brand text-info m-3"
+            href="#"
+            style="
+              border-right: 1px solid #ccc;
+              padding-right: 10px;
+              font-weight: bold;
+              font-size: 27px;
+            "
+            >IndustriaNet</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarContent" >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item" style="margin-top: 4px">
+                <a
+                  class="nav-link active text-info"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item" style="margin-top: 4px">
+                <a class="nav-link text-info" href="#">About</a>
+              </li>
+              <li class="nav-item" style="margin-top: 4px">
+                <a class="nav-link text-info">Contact</a>
+              </li>
+              <li class="nav-item dropdown" style="margin-left: 8px">
+                <button
+                  class="nav-link dropdown-toggle text-info border-2 border-info rounded-3"
+                  href="#"
+                  id="nav-Dropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  style="background-color: transparent; margin-top: 3px"
+                >
+                  Services
+                </button>
+                <ul
+                  class="dropdown-menu mt-3 fade"
+                  aria-labelledby="nav-Dropdown"
+                >
+                  <li>
+                    <a
+                      class="dropdown-item text-info"
+                      target="_blank"
+                      href=""
+                      style="color: #001c47 !important"
+                    >
+                      Civil Engineering</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-info"
+                      target="_blank"
+                      href=""
+                      style="color: #001c47 !important"
+                    >
+                      Mechanical Engineering</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider bg-info" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item text-info"
+                      target="_blank"
+                      href=""
+                      style="color: #001c47 !important"
+                    >
+                      Power Engineering</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-info"
+                      target="_blank"
+                      href=""
+                      style="color: #001c47 !important"
+                    >
+                      Power Compressor</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-info"
+                      target="_blank"
+                      href=""
+                      style="color: #001c47 !important"
+                    >
+                      Electric Chiller</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-info"
+                      target="_blank"
+                      href=""
+                      style="color: #001c47 !important"
+                      >Factory</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control m-3 border-3 border-info rounded-3"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </form>
+            <form class="d-flex">
+              <button
+                class="navbtn btn bg-info text-white me-3 border-3 border-info rounded-3 shadow-lg"
+                type="submit"
+              >
+                Search
+              </button>
+              <button
+                class="navbtn btn bg-info text-white border-3 border-info rounded-3 shadow-lg"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#myModal"
+              >
+                Login
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div
+      class="modal fade"
+      id="myModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-info">
+            <h5
+              class="modal-title text-light shadow-lg font-weight-bolder"
+              id="staticBackdropLabel"
+            >
+              Login
+            </h5>
+            <button
+              type="button"
+              class="btn btn-close bg-light"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+              style="background-color: #f8f9fa !important"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="m-3">
+                <label
+                  class="form-label text-info"
+                  style="color: #001c47 !important"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control text-info border-3 border-info rounded-2"
+                  aria-describedby="emailHelp"
+                />
+                <p class="form-text text-secondary">
+                  We'll never share your email with anyone else.
+                </p>
+              </div>
+              <div class="m-3">
+                <label
+                  class="form-label text-info"
+                  style="color: #001c47 !important"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control text-info border-3 border-info rounded-2"
+                />
+              </div>
+              <div class="m-3 form-check">
+                <div class="form-check form-switch">
+                  <input
+                    class="form-check-input bg-info"
+                    type="checkbox"
+                    role="switch"
+                    checked
+                  />
+                  <label
+                    class="form-check-label text-info"
+                    for="flexSwitchCheckChecked"
+                    style="color: #001c47 !important"
+                    >Remember me</label
+                  >
+                </div>
+              </div>
+            </form>
+            <div class="modal-footer d-flex justify-content-between">
+              <button type="submit" class="btn btn-info text-light">
+                Login
+              </button>
+              <button
+                type="button"
+                class="btn btn-info text-light"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <aside>
+      <div class="container-fluid p-0" style="position: relative">
+        <div
+          class="d-flex flex-column justify-content-between ms-auto"
+          style="position: fixed; z-index: 90; top: 200px; right: 20px"
+        >
+          <div class="aside-icon">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+          </div>
+          <div class="aside-icon">
+            <a href="#"><i class="fab fa-whatsapp-square"></i></a>
+          </div>
+          <div class="aside-icon">
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+          </div>
+          <div class="aside-icon">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+          <div class="aside-icon">
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="images/bg1.jpg"
+            alt="cairo"
+            class="d-block w-100"
+            style="height: 600px"
+          />
+          <div class="imgoverlay"></div>
+          <div class="carousel-caption" style="margin-bottom: 108px">
+            <h1>Provide Solution For Industries Plan</h1>
+            <p style="line-height: 1.8; font-size: large">
+              We produce positive results from ever-growing<br />Industrial &
+              manufacturing estates.
+            </p>
+            <a
+              href="#"
+              class="btn btn-info text-white text-shadow headerhover"
+              target="_blank"
+              style="font-size: large"
+              >Our Services</a
+            >
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/c4.jpg"
+            alt="aswan"
+            class="d-block w-100"
+            style="height: 600px"
+          />
+          <div class="imgoverlay"></div>
+          <div class="carousel-caption" style="margin-bottom: 108px">
+            <h1>Build Your Industry With Us</h1>
+            <p style="line-height: 1.8; font-size: large">
+              We always try to bring the beautiful smile of our <br />
+              customers with our awesome works
+            </p>
+            <a
+              href="#"
+              class="btn btn-info text-white text-shadow headerhover"
+              target="_blank"
+              style="font-size: large"
+              >Our Services</a
+            >
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- //////////////////////////////////////////////////welcome section///////////////////////////////////////////////////////////// -->
+    <section style="margin-top: 50px">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-6">
+            <div
+              class="welcome mt-5 mb-2"
+              style="margin-bottom: 1.5rem !important"
+            >
+              <span>Welcome to Industry Company</span>
+            </div>
+            <p class="h1" style="color: #001c47; font-weight: 700">
+              We Are Expert In All Industry Works
+            </p>
+            <h4 class="welcomeP">
+              IndustriaNet is an active company based on valve sector since
+              1981, that follows global developments carefully, pioneer and
+              innovator.
+            </h4>
+            <ul class="right-content-items" style="padding-left: 0rem">
+              <li class="single-item body-text">
+                <span
+                  class="single-item-icon"
+                  style="color: #fc5e16; margin-right: 10px"
+                  ><i class="fas fa-check"></i
+                ></span>
+                Quality Control System , 100% Satisfaction Guarantee
+              </li>
+              <li class="single-item body-text">
+                <span
+                  class="single-item-icon"
+                  style="color: #fc5e16; margin-right: 10px"
+                  ><i class="fas fa-check"></i
+                ></span>
+                Unrivalled Workmanship, Professional and Qualified
+              </li>
+              <li class="single-item body-text">
+                <span
+                  class="single-item-icon"
+                  style="color: #fc5e16; margin-right: 10px"
+                  ><i class="fas fa-check"></i
+                ></span>
+                Environmental Sensitivity, Personalised Solutions
+              </li>
+            </ul>
+            <button type="button" class="btn btn-lg btn-read" style="    margin-bottom: 15px;
+            ">Read More</button>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <img
+              src="./images/welcome.png"
+              alt="welcomeimage"
+              style="width: 555px;
+              height: 460px;
+              margin-top: 40px;"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ////////////////////////////////////////////Query////////////////////////////////////////////////////////////////// -->
+    <section>
+      <div class="container">
+        <div class="row gy-5 gy-lg-0" style="margin: 80px 0px">
+          <div class="col-md-6 col-lg-6">
+            <div class="left-content">
+              <div class="section-head">
+                <span class="heading-bg">QUERY</span>
+                <h2 class="section-title">
+                  Answers to frequently asked questions
+                  <span class="heading-dot"></span>
+                </h2>
+                <p class="body-text">
+                  Our team of engineers and technicians are professionally
+                  trained by the Firm. In parallel with the repair & maintenance
+                  of pumps on floating vehicles.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <div class="right-content">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="false"
+                      aria-controls="collapseOne"
+                    >
+                      Why do you need a plan?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      The development of the general plan of the site is the
+                      placement of the future house on the site relative to
+                      other buildings, neighboring plots, environmental zones,
+                      taking into account insolation.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      Features of the barn house style?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      The development of the general plan of the site is the
+                      placement of the future house on the site relative to
+                      other buildings, neighboring plots, environmental zones,
+                      taking into account insolation.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      What is the scandinavian style?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      The development of the general plan of the site is the
+                      placement of the future house on the site relative to
+                      other buildings, neighboring plots, environmental zones,
+                      taking into account insolation.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /////////////////////////////////////////////////Fixed Image One////////////////////////////////////////////////////// -->
+    <div class="fixedimg">
+      <div class="overlay">
+        <div class="container h-100">
+          <div class="row justify-content-center align-items-center h-100">
+            <div class="col-lg-4 col-sm-12">
+              <div class="card">
+                <div class="card-body">
+                  <div class="single-count counter-item">
+                    <div class="counter-icon">
+                      <i class="far fa-file-alt"></i>
+                    </div>
+                    <div class="counter-text text-center">
+                      <span class="count" style="margin-right: 2px">7000</span>K
+                    </div>
+                    <h4 class="text-center cardContent">Projects Finished</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+              <div class="card">
+                <div class="card-body">
+                  <div class="single-count counter-item">
+                    <div class="counter-icon">
+                      <i class="fa fa-solid fa-users"></i>
+                    </div>
+                    <div class="counter-text text-center">
+                      <span class="count" style="margin-right: 2px">5600</span>+
+                    </div>
+                    <h4 class="text-center cardContent">Happy Clients</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+              <div class="card">
+                <div class="card-body">
+                  <div class="single-count counter-item">
+                    <div class="counter-icon">
+                      <i class="fas fa-award"></i>
+                    </div>
+                    <div class="counter-text text-center">
+                      <span class="count" style="margin-right: 2px">999</span>+
+                    </div>
+                    <h4 class="text-center cardContent">Winning Awards</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //////////////////////////////////////////////Service Section/////////////////////////////////////////////////////////////////// -->
+
+    <section>
+      <div class="section-head text-center mb-50" style="margin-top: 40px;">
+        <span class="heading-bg" >OUR BEST SERVICES
+        </span>
+        <h2 class="section-title" style="margin-bottom: 5px">
+          Our Services & Solutions 
+          <span class="heading-dot"></span>
+        </h2>
+      </div>
+      <div class="container-fluid">
+        <div class="row justify-content-evenly pb-5">
+          <div
+            class="card cardover text-info col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow"
+            style="padding: 0px; border: 0; border-radius: 30px"
+          >
+            <input
+              type="image"
+              src="images/service-1.png"
+              class="card-img-top shadow w-100"
+              alt=" pic"
+              style="border-radius: 30px 30px 0 0"
+            />
+            <div
+              class="card-body"
+              style="
+                background-color: white;
+                border: 0.5px solid #ededed;
+                border-radius: 0 0 30px 30px;
+              "
+            >
+              <h5 class="card-title ct">Mechanical Engineering</h5>
+              <p class="card-text" style="color: #777; text-align: center">
+                Industrial visuals are images that depict or represent various
+                elements regarding the manufacturing of products.
+              </p>
+              <button
+                class="btn btn-info text-light mx-auto d-block"
+                style="transition: 0.5s"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+          <div
+            class="card cardover text-info col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow"
+            style="padding: 0px; border: 0; border-radius: 30px"
+          >
+            <input
+              type="image"
+              src="images/service-2.png"
+              class="card-img-top shadow"
+              alt=" pic"
+              style="border-radius: 30px 30px 0 0"
+            />
+            <div
+              class="card-body"
+              style="
+                background-color: white;
+                border: 0.5px solid #ededed;
+                border-radius: 0 0 30px 30px;
+              "
+            >
+              <h5 class="card-title ct">Power Engineering</h5>
+              <p class="card-text" style="color: #777; text-align: center">
+                Industrial visuals are images that depict or represent various
+                elements regarding the manufacturing of products.
+              </p>
+              <button
+                class="btn btn-info text-light mx-auto d-block"
+                style="transition: 0.5s"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+          <div
+            class="card cardover text-info col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow"
+            style="padding: 0px; border: 0; border-radius: 30px"
+          >
+            <input
+              type="image"
+              src="images/service-3.png"
+              class="card-img-top shadow"
+              alt=" pic"
+              style="border-radius: 30px 30px 0 0"
+            />
+            <div
+              class="card-body"
+              style="
+                background-color: white;
+                border: 0.5px solid #ededed;
+                border-radius: 0 0 30px 30px;
+              "
+            >
+              <h5 class="card-title ct">Civil Engineering</h5>
+              <p class="card-text" style="color: #777; text-align: center">
+                Industrial visuals are images that depict or represent various
+                elements regarding the manufacturing of products.
+              </p>
+              <button
+                class="btn btn-info text-light mx-auto d-block"
+                style="transition: 0.5s"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- /row cards -->
+      </div>
+      <!-- /container -->
+    </section>
+
+    <!-- //////////////////////////////////////////////Fixed Image Two///////////////////////////////////////////////////////////////// -->
+    <section>
+      <div class="fixedimg2">
+        <div class="fixed-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="fixed-icon" style="margin: auto">
+                  <a
+                    class="ct-video-button style3"
+                    href="https://www.youtube.com/watch?v=EqF3b6XdNB0"
+                    ><i class="fas fa-play"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <h2
+                  style="
+                    text-align: center;
+                    color: white;
+                    font-size: 2rem;
+                    margin-top: 40px;
+                    font-weight: 700;
+                  "
+                >
+                  We Help You to Turn Vision
+                </h2>
+                <h2
+                  style="
+                    text-align: center;
+                    color: white;
+                    font-size: 2rem;
+                    margin-top: 20px;
+                    font-weight: 700;
+                  "
+                >
+                  Into Reality
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //////////////////////////////////////////////Team Section/////////////////////////////////////////////////////////////////// -->
+    <div class="section-head text-center mb-50" style="margin-top: 60px">
+      <span class="heading-bg">Team</span>
+      <h2 class="section-title" style="margin-bottom: 40px">
+        Our Best Team Members
+        <span class="heading-dot"></span>
+      </h2>
+    </div>
+    <section class="team-section">
+      <div class="container" style="width: 100%; min-height: 500px">
+        <div class="row" style="justify-content: space-evenly">
+          <div class="col-sm-12 col-md-12 col-lg-4 mb-4">
+            <div
+              class="card card-hover text-white card-bg click-col thank-card"
+              style="background-image: url('images/team1.jpg')"
+            >
+              <div class="card-img-overlay d-flex flex-column">
+                <div class="card-body">
+                  <h4 class="card-title mt-0">
+                    <a class="text-white" herf="#"
+                      >All thanks and appreciation</a
+                    >
+                  </h4>
+                  <small><i class="far fa-clock"></i> February 20, 2024</small>
+                </div>
+                <div class="card-footer">
+                  <div class="media">
+                    <img
+                      class="mr-3 rounded-circle"
+                      src="images/team1.jpg"
+                      alt="Generic placeholder image"
+                      style="width: 100px; margin-bottom: 20px"
+                    />
+                    <div class="media-body">
+                      <h6 class="my-0 text-white d-block">
+                        Eng.Rudolph Spitler
+                      </h6>
+                      <small>Civil Engineer</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-4 mb-4">
+            <div
+              class="card card-hover text-white card-bg click-col thank-card"
+              style="background-image: url('images/team2.jpg')"
+            >
+              <div class="card-img-overlay d-flex flex-column">
+                <div class="card-body">
+                  <h4 class="card-title mt-0">
+                    <a class="text-white" herf="#"
+                      >All thanks and appreciation</a
+                    >
+                  </h4>
+                  <small><i class="far fa-clock"></i> February 22, 2024</small>
+                </div>
+                <div class="card-footer">
+                  <div class="media">
+                    <img
+                      class="mr-3 rounded-circle"
+                      src="images/team2.jpg"
+                      alt="Generic placeholder image"
+                      style="width: 100px; margin-bottom: 20px"
+                    />
+                    <div class="media-body">
+                      <h6 class="my-0 text-white d-block">Eng.Amy Dasilva</h6>
+                      <small>Electrical Engineer</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-4 mb-4 card3">
+            <div
+              class="card card-hover text-white card-bg click-col thank-card"
+              style="background-image: url('images/team3.jpg')"
+            >
+              <div class="card-img-overlay d-flex flex-column">
+                <div class="card-body">
+                  <h4 class="card-title mt-0">
+                    <a class="text-white" herf="#"
+                      >All thanks and appreciation</a
+                    >
+                  </h4>
+                  <small><i class="far fa-clock"></i> February 25, 2024</small>
+                </div>
+                <div class="card-footer">
+                  <div class="media">
+                    <img
+                      class="mr-3 rounded-circle"
+                      src="images/team3.jpg"
+                      alt="Generic placeholder image"
+                      style="width: 100px; margin-bottom: 20px"
+                    />
+                    <div class="media-body">
+                      <h6 class="my-0 text-white d-block">
+                        Eng.Alfread Miller
+                      </h6>
+                      <small>Power Engineer</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- //////////////////////////////////////////////News Section/////////////////////////////////////////////////////////////////// -->
+    <section class="container light">
+      <div class="section-head text-center mb-50" style="margin-top: 40px;">
+        <span class="heading-bg" >News
+        </span>
+        <h2 class="section-title" style="margin-bottom: 50px">
+          Our Latest News 
+          <span class="heading-dot"></span>
+        </h2>
+      </div>
+
+        <article class="postcard d-flex light blue">
+          <a class="postcard__img_link" href="#">
+            <img class="postcard__img" src="images/c1.jpg" alt="Image Title" />
+          </a>
+          <div class="postcard__text t-dark">
+            <h1 class="postcard__title blue">
+              <a href="#">We help organisations to understand</a>
+            </h1>
+            <div class="postcard__subtitle small">
+              <div class="news-date">
+                <i
+                  class="far fa-calendar-alt mr-2"
+                  style="margin-right: 8px"
+                ></i
+                >Sun, Feb 25th 2024
+              </div>
+            </div>
+            <div class="postcard__bar"></div>
+            <div class="postcard__preview-txt">
+              The supply from the standard in addition to customized
+              construction products have brought towards the development of
+              property sector in addition to various allied sectors.
+              Furthermore, consistent development and research is built to
+              provide using the most suitable products.
+            </div>
+            <ul class="postcard__tagbox">
+              <li class="tag__item play blue">
+                <a href="#" style="font-size: 19px; font-weight: 500"
+                  >Explore More <i class="fas fa-angle-double-right"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <!-- /1st card -->
+        <article class="postcard d-flex light red">
+          <!-- 2nd card -->
+          <a class="postcard__img_link" href="#">
+            <img class="postcard__img" src="images/c2.jpg" alt="Image Title" />
+          </a>
+          <div class="postcard__text t-dark">
+            <h1 class="postcard__title red">
+              <a href="#">Utilization of Titanium In Industrie</a>
+            </h1>
+            <div class="postcard__subtitle small">
+              <div class="news-date">
+                <i
+                  class="far fa-calendar-alt mr-2"
+                  style="margin-right: 8px"
+                ></i
+                >Sun, Feb 25th 2024
+              </div>
+            </div>
+            <div class="postcard__bar"></div>
+            <div class="postcard__preview-txt">
+              The supply from the standard in addition to customized
+              construction products have brought towards the development of
+              property sector in addition to various allied sectors.
+              Furthermore, consistent development and research is built to
+              provide using the most suitable products.
+            </div>
+            <ul class="postcard__tagbox">
+              <li class="tag__item play red">
+                <a href="#" style="font-size: 19px; font-weight: 500"
+                  >Explore More <i class="fas fa-angle-double-right"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <!-- /2nd card -->
+        <article class="postcard d-flex light green">
+          <!-- 3rd card -->
+          <a class="postcard__img_link" href="#">
+            <img class="postcard__img" src="images/c3.jpg" alt="Image Title" />
+          </a>
+          <div class="postcard__text t-dark">
+            <h1 class="postcard__title green">
+              <a href="#">The Role Of The CNC Machine Operato</a>
+            </h1>
+            <div class="postcard__subtitle small">
+              <div class="news-date">
+                <i
+                  class="far fa-calendar-alt mr-2"
+                  style="margin-right: 8px"
+                ></i
+                >Sun, Feb 25th 2024
+              </div>
+            </div>
+            <div class="postcard__bar"></div>
+            <div class="postcard__preview-txt">
+              The supply from the standard in addition to customized
+              construction products have brought towards the development of
+              property sector in addition to various allied sectors.
+              Furthermore, consistent development and research is built to
+              provide using the most suitable products.
+            </div>
+            <ul class="postcard__tagbox">
+              <li class="tag__item play green">
+                <a href="#" style="font-size: 19px; font-weight: 500"
+                  >Explore More <i class="fas fa-angle-double-right"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <!-- /3rd card -->
+        <article class="postcard d-flex light yellow">
+          <!-- 4th card -->
+          <a class="postcard__img_link" href="#">
+            <img class="postcard__img" src="images/c4.jpg" alt="Image Title" />
+          </a>
+          <div class="postcard__text t-dark">
+            <h1 class="postcard__title yellow">
+              <a href="#">The Various Industries That Take Advantage</a>
+            </h1>
+            <div class="postcard__subtitle small">
+              <div class="news-date">
+                <i
+                  class="far fa-calendar-alt mr-2"
+                  style="margin-right: 8px"
+                ></i
+                >Sun, Feb 25th 2024
+              </div>
+            </div>
+            <div class="postcard__bar"></div>
+            <div class="postcard__preview-txt">
+              The supply from the standard in addition to customized
+              construction products have brought towards the development of
+              property sector in addition to various allied sectors.
+              Furthermore, consistent development and research is built to
+              provide using the most suitable products.
+            </div>
+            <ul class="postcard__tagbox">
+              <li class="tag__item play yellow">
+                <a href="#" style="font-size: 19px; font-weight: 500"
+                  >Explore More <i class="fas fa-angle-double-right"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <!-- /4th card -->
+      </div>
+      <!-- /container -->
+    </section>
+    <!-- //////////////////////////////////////////////Contact Us Section/////////////////////////////////////////////////////////////////// -->
+    <section>
+      <div class="container">
+        <div class="section-head text-center mb-50">
+          <span class="heading-bg">Contact</span>
+          <h2 class="section-title" style="margin-bottom: 50px">
+            Needs Help? Let’s Get in Touch
+            <span class="heading-dot"></span>
+          </h2>
+        </div>
+        <div class="container" style="width: 98%">
+          <form method="POST">
+            <div class="row" style="width: 80%; margin: auto">
+              <div class="col-md-6 col-lg-6" style="margin-bottom: 35px">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    required
+                    placeholder="Your Name"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-6" style="margin-bottom: 35px">
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="Your Email"
+                  />
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <textarea
+                    class="form-control"
+                    id="sentence"
+                    name="message"
+                    rows="5"
+                    required
+                    placeholder="Message"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <button
+                  class="btn border border-2 btn-make .btn-make::before .btn-make::after shadow-lg"
+                  onclick="copyToClipboard('sentence')"
+                  id="btncopy"
+                  style="
+                    margin: 50px 0px 70px;
+                    font-size: 20px;
+                    color: white;
+                    border: 1px solid #fc5e16 !important;
+                  "
+                >
+                  Make an Appoinment
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="container">
+          <div class="row" style="justify-content: space-evenly">
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+              <div class="card" style="width: 24rem">
+                <div class="card-body cd">
+                  <div class="card-body-img">
+                    <img src="./images/dog-house.png" class="contact-img" />
+                  </div>
+                  <div class="card-content">
+                    <h5 class="card-title">Address</h5>
+                    <p class="card-text">Hinkle Deegan Lake Road</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+              <div class="card" style="width: 24rem">
+                <div class="card-body cd">
+                  <div class="card-body-img">
+                    <img src="./images/mail.png" class="contact-img" />
+                  </div>
+                  <div class="card-content">
+                    <h5 class="card-title">Email Address</h5>
+                    <p class="card-text1" style="cursor: pointer">
+                      IndustriaNet@gmail.com
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+              <div class="card" style="width: 24rem">
+                <div class="card-body cd">
+                  <div class="card-body-img">
+                    <img src="./images/phone-call.png" class="contact-img" />
+                  </div>
+                  <div class="card-content">
+                    <h5 class="card-title">Phone Number</h5>
+                    <p class="card-text1" style="cursor: pointer">
+                      +90 157 458 321
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //////////////////////////////////////////////////Footer Section//////////////////////////////////////////////////////////// -->
+    <div class="section">
+      <div class="footer-container">
+        <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-item-first">
+              <div class="footer-logo">
+                <a href="#"
+                  ><img src="images/logo-light.png" alt="LOGO" draggable="false"
+                /></a>
+              </div>
+              <div class="footer-logo-content">
+                <span class="span1">IndustriaNet</span>
+              </div>
+              <div class="footer-content">
+                <p>
+                  Enersense is a creator of zero emission energy solutions. Our
+                  versatile services help bring success to companies in the
+                  industry.
+                </p>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6" style="padding-left: 75px;" >
+            <div class="footer-item">
+              <div class="footer-content">
+                <h2>Quick Links</h2>
+                <ul class="footer-content-list">
+                  <li>
+                    <i class="fas fa-chevron-right"></i><a href="#">About Us</a>
+                  </li>
+                  <li><i class="fas fa-chevron-right"></i><a href="#">Price</a></li>
+                  <li><i class="fas fa-chevron-right"></i><a href="#">Team</a></li>
+                  <li><i class="fas fa-chevron-right"></i><a href="#">FAQ</a></li>
+                  <li>
+                    <i class="fas fa-chevron-right"></i><a href="#">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6" style="padding-left: 75px;">
+            <div class="footer-item">
+              <div class="footer-content">
+                <h2>Our Services</h2>
+                <ul class="footer-content-list">
+                  <li>
+                    <i class="fas fa-chevron-right"></i
+                    ><a href="#">Power Engineering</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-chevron-right"></i
+                    ><a href="#">Civil Engineering</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-chevron-right"></i
+                    ><a href="#">Mechanical Engineering</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-chevron-right"></i
+                    ><a href="#">Electric Industry</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-chevron-right"></i
+                    ><a href="#">Electric Engineering</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6" style="padding-left: 75px;">
+            <div class="footer-item">
+              <div class="footer-content">
+                <h2>Subscribe</h2>
+                <ul class="footer-content-list">
+                  <li class="without-click">
+                    If you have any questions. Subscribe to our newsletter to get
+                    our latest products.
+                  </li>
+                </ul>
+                <form action="#" class="subscribe-form">
+                  <div class="form-input-wrapper">
+                    <input
+                      type="text"
+                      placeholder="Your Email"
+                      class="form-input"
+                    />
+                    <button class="button subscribe-button">
+                      <span class="button-icon"
+                        ><i class="far fa-paper-plane"></i
+                      ></span>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      </div>
+      <div class="copyright">
+        <p>&copy;2024 IndustriaNet is Proudly Owned by Reham</p>
+      </div>
+    </div>
+    <script type-text="javascript">
+      function copyToClipboard(id) {
+        var from = document.getElementById(id);
+        var range = document.createRange();
+        window.getSelection().removeAllRanges();
+        range.selectNode(from);
+        window.getSelection().addRange(range);
+        document.execCommand("copy");
+        window.getSelection().removeAllRanges();
+        window.alert("Try again");
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
